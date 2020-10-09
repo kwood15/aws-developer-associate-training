@@ -90,6 +90,12 @@ aws lambda update-function-configuration --function-name {FUNCTION-NAME} --descr
 - Versioning/Weighting/Aliases
 
 ---
+
+Serverless Application Model
+> The AWS Serverless Application Model (AWS SAM) is an open-source framework that enables you to build serverless applications on AWS. It provides you with a template specification to define your serverless application, and a command line interface (CLI) tool.
+
+
+---
 **Networking & Content Delivery**
 ---
 API Gateway
