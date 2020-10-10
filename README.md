@@ -3,7 +3,7 @@
 
 ---
 **Shared Responsibility Model**  
-[Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
+https://aws.amazon.com/compliance/shared-responsibility-model/
 ---
 
 *AWS responsibility “Security of the Cloud”*  
