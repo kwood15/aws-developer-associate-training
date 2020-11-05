@@ -42,11 +42,30 @@ IAM - Identity and Access Management
 - Integrates with many different AWS services
 - Supports PCI DSS Compliance
 
-**Critical Terms:**
+Security:
+- Delete your root access keys
+- Activate MFA on your root account
+- Create individual IAM users
+- Use groups to assign permissions
+- Apply an IAM password policy (lifecycle management)
+
+MFA:
+- Virtual - Phone, Google Authenticator, Authy 2Fa - 6 digit code
+- Hardware
+
+Critical Terms:
 - **Users** - End Users (think people)
 - **Groups** - A collection of users under one set of permissions (e.g Marketing Team, DB Team)
 - **Roles** - You can create roles and can then assign them to AWS resources (defines a set of permissions, e.g S3 bucket access)
 - **Policies** - A document that defines one (or more) permissions (they can be attached to a user, a group or a role - they can all share the same policy)
+
+Create User:
+- Create Username
+- Create AWS Access Types
+  - **Programmatic Access**  
+  Enables and **Access Key Id** and **Secret Access Key** for the AWS API, CLI, SDK and other development tools
+  - **AWS Management Console Access**  
+  Enables a **password** that allows users to sign-in to the AWS Management Console
 
 ```
 aws configure --profile [username]
