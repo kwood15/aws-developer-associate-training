@@ -32,9 +32,27 @@ https://aws.amazon.com/compliance/shared-responsibility-model/
 IAM - Identity and Access Management
 > AWS Identity and Access Management (IAM) is a web service for securely controlling access to AWS services. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access.
 
+- Centralised control of your AWS account
+- Shared Access to your AWS account
+- Granular Permissions
+- Identity Federation (including Active Directory, Facebook, LinkedIn, etc)
+- Multifactor Authentication
+- Provides temporary access for users/devices and services as necessary
+- Allows you to set up your own password rotation policy
+- Integrates with many different AWS services
+- Supports PCI DSS Compliance
+
+**Critical Terms:**
+- **Users** - End Users (think people)
+- **Groups** - A collection of users under one set of permissions (e.g Marketing Team, DB Team)
+- **Roles** - You can create roles and can then assign them to AWS resources (defines a set of permissions, e.g S3 bucket access)
+- **Policies** - A document that defines one (or more) permissions (they can be attached to a user, a group or a role - they can all share the same policy)
+
+```
 aws configure --profile [username]
 aws iam list-users
 aws iam list-groups
+```
 
 Cognito
 > Amazon Cognito handles user authentication and authorization for your web and mobile apps. With user pools, you can easily and securely add sign-up and sign-in functionality to your apps. With identity pools (federated identities), your apps can get temporary credentials that grant users access to specific AWS resources, whether the users are anonymous or are signed in.
